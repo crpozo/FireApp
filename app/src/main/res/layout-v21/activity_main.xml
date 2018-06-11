@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.carlo.fireapp.MainActivity">
+
+    <Button
+        android:id="@+id/btn_agregarCoord"
+        style="@android:style/Widget.Material.Light.Button.Borderless.Small"
+        android:layout_width="356dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="136dp"
+        android:background="@color/colorPrimary"
+        android:text="Guardar Coordenadas"
+        android:textAlignment="center"
+        android:textColor="@color/common_google_signin_btn_text_dark_pressed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_longitud"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/txt_latitud"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="192dp"
+        android:fontFamily="monospace"
+        android:text="Latitud"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/input_latitud"
+        android:layout_width="wrap_content"
+        android:layout_height="19dp"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="192dp"
+        app:layout_constraintStart_toEndOf="@+id/txt_latitud"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/txt_longitud"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="29dp"
+        android:fontFamily="monospace"
+        android:text="Longitud"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_latitud"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/input_longitud"
+        android:layout_width="wrap_content"
+        android:layout_height="18dp"
+        android:layout_marginStart="149dp"
+        android:layout_marginTop="42dp"
+        app:layout_constraintStart_toEndOf="@+id/txt_longitud"
+        app:layout_constraintTop_toBottomOf="@+id/input_latitud"
+        tools:ignore="MissingConstraints" />
+</android.support.constraint.ConstraintLayout>
